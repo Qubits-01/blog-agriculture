@@ -30,7 +30,7 @@ a {
 
 .btn {
     padding: 0.5rem 1rem;
-    background: #007E33;  /* background: #006669; */
+    background: #00742e;  /* background: #006669; */
     color: white;
     border: 1px solid transparent;
     border-radius: 0.25rem;
@@ -168,7 +168,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background: #006669;
+    background: #004204;  /* background: #006669; */
     transition: 0.5s;
 }
 
@@ -306,7 +306,7 @@ header .menu-toggle {
     border: 1px solid #1b5e20; /* border: 1px solid #006669; */
     background: transparent;
     border-radius: 0px;
-    color: #006669 !important;
+    color: #1b5e20 !important;  /* background: #006669 !important; */
 }
 
 .content .main-content .post .read-more:hover {
@@ -606,7 +606,7 @@ header .menu-toggle {
     }
 
     header ul li ul li a:hover {
-        background: #006669;
+        background: #1b5e20;  /* background: #006669; */
     }
 
     header ul li ul li a.logout {
