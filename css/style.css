@@ -273,6 +273,7 @@ header .menu-toggle {
     border-radius: 5px;
     background: white;
     position: relative;
+    /* border: 1px solid red; */
 }
 
 /* Single */
@@ -313,12 +314,14 @@ header .menu-toggle {
     float: left;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    /* border: 1px solid blue; */
 }
 
 .content .main-content .post .post-preview {
     width: 60%;
     padding: 10px;
     float: right;
+    /* border: 1px solid green; */
 }
 
 .content .main-content .recent-post-title {
@@ -328,12 +331,12 @@ header .menu-toggle {
 .content .sidebar {
     width: 30%;
     float: left;
-    height: 300px;
     /* border: 1px solid green; */
+    /* border: 3px dashed green; */
 }
 
-/* Single */
-.content .sidebar.sidebar {
+/* Single [!] */
+.content .sidebar.single {
     padding: 0px 10px;
 }
 
@@ -401,14 +404,16 @@ header .menu-toggle {
 .footer {
     background: #303036;
     color: #d3d3d3;
-    height: 420px;  /* height: 400px; */
+    height: 400px;  /* height: 400px; */
     position: relative;
+    /* border: 1px solid red; */
 }
 
 .footer .footer-content {
     height: 350px;
     display: flex;
     /* border: 1px solid red; */
+    /* border: 2px dashed blue; */
 }
 
 .footer .footer-content .footer-section {
@@ -497,6 +502,47 @@ header .menu-toggle {
 /* # FOOTER */
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 934px) {
+    .content {
+        width: 100%;
+    }
+
+    .content .main-content .post {
+        width: 100%;
+    }
+
+    .content .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content .sidebar .section.search {
+        margin-top: 30px;
+    }
+
+    .footer {
+        height: auto;
+    }
+    
+    .footer .footer-content {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer .footer-content .contact-form {
+        padding-bottom: 90px;
+    }
+
+    .footer .footer-content .contact-form .contact-btn {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     header {
         position: relative;
@@ -551,6 +597,27 @@ header .menu-toggle {
 
     header .logo {
         margin-left: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content .main-content .post {
+        height: auto;
+    }
+
+    .content .main-content .post .post-image {
+        width: 100%;
+    }
+    
+    .content .main-content .post .post-preview {
+        width: 100%;
+    }
+
+    .content .main-content .post .read-more {
+        position: static;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 /* # MEDIA QUERIES */
