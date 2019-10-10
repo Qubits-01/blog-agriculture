@@ -30,7 +30,7 @@ a {
 
 .btn {
     padding: 0.5rem 1rem;
-    background: #006669;
+    background: #007E33;  /* background: #006669; */
     color: white;
     border: 1px solid transparent;
     border-radius: 0.25rem;
@@ -45,7 +45,7 @@ a {
 
 .btn:hover {
     color: white !important;
-    background-color: #005255;
+    background-color: #005723;  /* background-color: #005255; */
 }
 
 .text-input {
@@ -59,6 +59,13 @@ a {
     line-height: 1.5rem;
     font-size: 1.2em;
     font-family: 'Lora', serif;
+}
+
+.post-slider .post-wrapper .post .post-info i,
+.content .main-content .post i {
+    padding-top: 5px;
+    padding-left: 5px;
+    color: grey;
 }
 
 .msg {
@@ -88,7 +95,7 @@ header * {
 }
 
 header {
-    background: #008489;
+    background: darkgreen;  /* background: #008489; */
     height: 66px;
 }
 
@@ -105,7 +112,7 @@ header .logo-text {
 }
 
 header .logo-text span {
-    color: #05f7ff;
+    color: #00C851;  /* color: #05f7ff; */
 }
 
 header ul {
@@ -119,13 +126,14 @@ header ul {
 header ul li {
     float: left;
     position: relative;
+    font-family: 'Candal', sans-serif;
 }
 
 header ul li ul {
     position: absolute;
     top: 66px;
     right: 0px;
-    width: 185px;  /* width: inherit; */
+    width: 190px;  /* width: inherit; */
     display: none;
     z-index: 9999;
 }
@@ -174,7 +182,7 @@ header .menu-toggle {
 }
 
 .page-wrapper a:hover {
-    color: #006669;
+    color: #005723;  /* color: #006669; */
 }
 
 /* POST SLIDER */
@@ -193,7 +201,7 @@ header .menu-toggle {
     top: 50%;
     right: 30px;
     font-size: 2em;
-    color: #006669;
+    color: #005723;  /* color: #006669; */
     cursor: pointer;
 }
 
@@ -202,7 +210,7 @@ header .menu-toggle {
     top: 50%;
     left: 30px;
     font-size: 2em;
-    color: #006669;
+    color: #005723;  /* color: #006669; */
     cursor: pointer;
 }
 
@@ -295,14 +303,14 @@ header .menu-toggle {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    border: 1px solid #006669;
+    border: 1px solid #1b5e20; /* border: 1px solid #006669; */
     background: transparent;
     border-radius: 0px;
     color: #006669 !important;
 }
 
 .content .main-content .post .read-more:hover {
-    background: #006669;
+    background: #1b5e20;  /* background: #006669; */
     color: white !important;
     transition: 0.25s;
     
@@ -322,6 +330,10 @@ header .menu-toggle {
     padding: 10px;
     float: right;
     /* border: 1px solid green; */
+}
+
+.content .main-content .post .post-preview .preview-text {
+    padding-left: 5px;;
 }
 
 .content .main-content .recent-post-title {
@@ -428,7 +440,7 @@ header .menu-toggle {
 }
 
 .footer .footer-content .about h1 span {
-    color: #05f7ff;
+    color: #00C851;
 }
 
 .footer .footer-content .about .contact span {
@@ -506,6 +518,11 @@ header .menu-toggle {
     .content {
         width: 100%;
     }
+    
+    /* Authentication Pages */
+    .auth-content {
+        width: 50%;
+    }
 
     .content .main-content .post {
         width: 100%;
@@ -543,9 +560,19 @@ header .menu-toggle {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
     header {
         position: relative;
+    }
+
+    /* Authentication Pages */
+    .auth-content {
+        width: 60%;
+    }
+
+    /* Single */
+    .main-content-wrapper{
+        padding: 10px;
     }
 
     header ul {
@@ -605,6 +632,16 @@ header .menu-toggle {
         height: auto;
     }
 
+    /* Authentication Pages */
+    .auth-content {
+        width: 90%;
+    }
+
+    /* Single */
+    .content .main-content.single {
+        padding: 10px 20px;
+    }
+
     .content .main-content .post .post-image {
         width: 100%;
     }
@@ -618,6 +655,14 @@ header .menu-toggle {
         display: block;
         width: 100%;
         text-align: center;
+    }
+
+    .post-slider .next {
+        right: 10px;
+    }
+    
+    .post-slider .prev {
+        left: 10px;
     }
 }
 /* # MEDIA QUERIES */
