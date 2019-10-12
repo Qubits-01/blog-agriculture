@@ -1,339 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Normalize -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/b562d3110b.js" crossorigin="anonymous"></script>
+        <!-- Responsive Grid System -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+
+        <!-- Ionicons -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+
+        <!-- Animate -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+
+        <!-- Custom Style -->
+        <link rel="stylesheet" type="text/css" href="resources/css/index-style.css">
+
+        <!-- Custom Media Queries -->
+        <link rel="stylesheet" type="text/css" href="resources/css/index-media-queries.css">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
 
-        <!-- Custom Styling -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <link rel="icon" href="images/icons/favicon_kandili.ico">
-        <title>KanDili Blog</title>
+        <link rel="icon" href="resources/img/icons/KanDili.ico">
+        <title>Welcome to KanDili</title>
     </head>
-       
+
     <body>
-        <!-- Navigation Bar -->
         <header>
-            <!-- <img src="images/icons/icon-kandili/Android/Icon-48.png"> -->
-            <div class="logo">
-                <h1 class="logo-text"><span>Kan</span>Dili</h1>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/icons/KanDili-512.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/icons/KanDili-512.png" alt="Omnifood logo" class="logo-black">
+
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Our story</a></li>
+                        <li><a href="#works">Download</a></li>
+                        <li><a href="#cities">Recognition</a></li>
+                        <li><a href="#plans">Donate</a></li>
+                    </ul>
+
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+
+            <div class="hero-text-box">
+
+                <h1>Agriculture is for our future.<br>Dive in and discover.</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="web-pages/main-menu.html">I want to learn</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
             </div>
-
-            <i class="fa fa-bars menu-toggle"></i>  <!-- i.fa.fa-bars -->
-
-            <ul class="nav">
-                <li>
-                    <a href="#">Home</a>
-
-                    <ul style="left: 0px">
-                        <li><a href="#">Landing Page</a></li>
-                        <li><a href="#" class="logout">Team</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-
-                <!-- <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Login</a></li> -->
-
-                <li>
-                    <a href="#">
-                        <i class="fa fa-user"></i>
-                        Marc Viernes
-                        <i class="fa fa-chevron-down" style="font-size: 0.8em"></i>
-                    </a>
-
-                    <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="login.html" class="logout">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
         </header>
-        <!-- # Navigation Bar -->
         
-        <!-- Page Wrapper -->
-        <div class="page-wrapper">
-            <!-- Post Slider -->
-            <div class="post-slider">
-                <h1 class="slider-title">Trending Posts</h1>
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Spread solutions &mdash; to solve problems</h2>
 
-                <i class="fas fa-chevron-left prev"></i>
-                <i class="fas fa-chevron-right next"></i>
-
-                <div class="post-wrapper">
-                    <div class="post">
-                        <img src="images/Posts/drought.jpg" alt="" class="slider-image">
-
-                        <div class="post-info">
-                            <h4><a href="blog-articles/blog-post-page-template.html">Too Much Sun, Too Little Rain. Where Will I Take a Bath?</a></h4>
-
-                            <i class="far fa-user"> Marc Friday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> December 9, 2001</i>
-                        </div>
-                    </div>
-
-                    <div class="post">
-                        <img src="images/Posts/food-waste.jpg" alt="" class="slider-image">
-
-                        <div class="post-info">
-                            <h4><a href="blog-articles/blog-post-page-template.html">Food Waste is Our Problem. Do You Want Tomato Paste?</a></h4>
-
-                            <i class="far fa-user"> Marc Tueday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> September 24, 2001</i>
-                        </div>
-                    </div>
-
-                    <div class="post">
-                        <img src="images/Posts/pesticides.jpg" alt="" class="slider-image">
-
-                        <div class="post-info">
-                            <h4><a href="blog-articles/blog-post-page-template.html">Murdering Insects are Bad. What the Actual F**k!</a></h4>
-
-                            <i class="far fa-user"> Marc Sunday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> July 6, 2008</i>
-                        </div>
-                    </div>
-
-                    <div class="post">
-                        <img src="images/Posts/science-for-farming.jpg" alt="" class="slider-image">
-
-                        <div class="post-info">
-                            <h4><a href="blog-articles/blog-post-page-template.html">Science is the Solution To Our Imagination. What the What?!</a></h4>
-
-                            <i class="far fa-user"> Marc Thursday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> March 27, 2020</i>
-                        </div>
-                    </div>
-
-                    <div class="post">
-                        <img src="images/Posts/water-for-plants.jpg" alt="" class="slider-image">
-
-                        <div class="post-info">
-                            <h4><a href="blog-articles/blog-post-page-template.html">I'm Sleepy and I Don't Know What I'm Talking About. Hotdog</a></h4>
-
-                            <i class="far fa-user"> Marc Wednesday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> October 8, 2019</i>
-                        </div>
-                    </div>
-                </div>
+                <p class="long-copy">
+                    Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. 
+                    No time for cooking. So let us take care of that, we're really good at it, we promise!
+                </p>
             </div>
-            <!-- # Post Slider -->
-
-            <!-- Content -->
-            <div class="content clearfix">
-                <!-- Main Content -->
-                <div class="main-content">
-                    <h1 class="recent-post-title">Recent Posts</h2>
-
-                    <div class="post clearfix">
-                        <img src="images/Posts/gmo-food.jpg" alt="" class="post-image">
-
-                        <div class="post-preview">
-                            <h2><a href="blog-articles/blog-post-page-template.html">Too Much Sun, Too Little Rain. Where Will I Take a Bath?</a></h2>
-
-                            <i class="far fa-user"> Marc Friday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> December 9, 2001</i>
-
-                            <p class="preview-text">
-                                Planet eating is now the new trend. Carpenters all over the universe
-                                are now shitting themselves to death.
-                            </p>
-
-                            <a href="blog-articles/blog-post-page-template.html" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="post clearfix">
-                        <img src="images/Posts/high-food-prices.jpg" alt="" class="post-image">
-
-                        <div class="post-preview">
-                            <h2><a href="blog-articles/blog-post-page-template.html">Too Much Sun, Too Little Rain. Where Will I Take a Bath?</a></h2>
-
-                            <i class="far fa-user"> Marc Friday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> December 9, 2001</i>
-
-                            <p class="preview-text">
-                                Planet eating is now the new trend. Carpenters all over the universe
-                                are now shitting themselves to death.
-                            </p>
-                            
-                            <a href="blog-articles/blog-post-page-template.html" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="post clearfix">
-                        <img src="images/Posts/typhoon-damaged-crops.jpg" alt="" class="post-image">
-
-                        <div class="post-preview">
-                            <h2><a href="blog-articles/blog-post-page-template.html">Too Much Sun, Too Little Rain. Where Will I Take a Bath?</a></h2>
-
-                            <i class="far fa-user"> Marc Friday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> December 9, 2001</i>
-
-                            <p class="preview-text">
-                                Planet eating is now the new trend. Carpenters all over the universe
-                                are now shitting themselves to death.
-                            </p>
-                            
-                            <a href="blog-articles/blog-post-page-template.html" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="post clearfix">
-                        <img src="images/Posts/vertical-farming.jpg" alt="" class="post-image">
-
-                        <div class="post-preview">
-                            <h2><a href="blog-articles/blog-post-page-template.html">Too Much Sun, Too Little Rain. Where Will I Take a Bath?</a></h2>
-
-                            <i class="far fa-user"> Marc Friday</i>
-                            &nbsp;
-
-                            <i class="far fa-calendar"> December 9, 2001</i>
-
-                            <p class="preview-text">
-                                Planet eating is now the new trend. Carpenters all over the universe
-                                are now shitting themselves to death.
-                            </p>
-                            
-                            <a href="blog-articles/blog-post-page-template.html" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Main Content -->
-
-                <!-- Sidebar -->
-                <div class="sidebar">
-                    <div class="section search">
-                        <h2 class="section-title">Search</h2>
-
-                        <form action="index.html" method="post">
-                            <input type="text" name="search-term" class="text-input" placeholder="Search...">
-                        </form>
-                    </div>
-                
-                    <div class="section topics">
-                        <h2 class="section-title">Topics</h2>
-
-                        <ul>
-                            <li><a href="#">Poems</a></li>
-                            <li><a href="#">Quotes</a></li>
-                            <li><a href="#">Fiction</a></li>
-                            <li><a href="#">Biography</a></li>
-                            <li><a href="#">Motivation</a></li>
-                            <li><a href="#">Inspiration</a></li>
-                            <li><a href="#">Life Lessons</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- # Sidebar -->
-            </div>
-            <!-- # Content -->
-        </div>
-        <!-- # Page Wrapper -->
-        
-        <!-- Footer-->
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <h1 class="logo-text"><span>Kan</span>Dili</h1>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Up to 365 days/year</h3>
 
                     <p>
-                        Kandili is a blogging website that focuses heavily on the agricultural aspects of
-                        the South East Asian Nations (ASEAN). Its main goal is to raise awareness and teach
-                        people about the current problems of these countries on the agricultural sector.
+                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. 
+                        You can also choose to order more flexibly if that's your style.
                     </p>
+                </div>
 
-                    <div class="contact">
-                        <span><i class="fas fa-phone"> &nbsp; (+63)936-907-2458</i></span>
-                        <span><i class="fas fa-envelope"> &nbsp; kadili.blog@gmail.com</i></span>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Ready in 20 minutes</h3>
+
+                    <p>
+                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your 
+                        home. We work with the best chefs in each town to ensure that you're 100% happy.
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <h3>100% organic</h3>
+
+                    <p>
+                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. 
+                        Good for your health, the environment, and it also tastes better!
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Order anything</h3>
+
+                    <p>
+                        We don't limit your creativity, which means you can order whatever you feel like. 
+                        You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                    </p>
+                </div>
+            </div>   
+        </section>
+        
+        <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/3.jpg" alt="Chicken breast steak with vegetables">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/5.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/7.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/index/8.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        
+        <section class="section-steps" id="works">
+            <div class="row">
+                <h2>Download now &mdash; Simple as 1, 2, 3</h2>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="resources/img/index/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+                </div>
+
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step clearfix">
+                        <div>1</div>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
                     </div>
 
-                    <div class="socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    <div class="works-step clearfix">
+                        <div>2</div>
+                        <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                    </div>
+
+                    <div class="works-step clearfix">
+                        <div>3</div>
+                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                    </div>
+                    
+                    <a href="#" class="btn-app"><img src="resources/img/index/download-app.svg" alt="App Store Button"></a>
+                    <a href="#" class="btn-app"><img src="resources/img/index/download-app-android.png" alt="Play Store Button"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-cities" id="cities">
+            <div class="row">
+                <h2>We're popular in these countries</h2>
+            </div>
+
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/index/lisbon-3.jpg" alt="Lisbon">
+                    <h3>Philippines</h3>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1600+ happy eaters
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        60+ top chefs
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_lx</a>
                     </div>
                 </div>
 
-                <div class="footer-section links">
-                    <h2>Quick Links</h2>
-                    <br>
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/index/san-francisco.jpg" alt="San Francisco">
+                    <h3>Malaysia</h3>
 
-                    <ul>
-                        <a href="#">
-                            <li>Events</li>
-                        </a>
-                        <a href="#">
-                            <li>Team</li>
-                        </a>
-                        <a href="#">
-                            <li>Mentors</li>
-                        </a>
-                        <a href="#">
-                            <li>Gallery</li>
-                        </a>
-                        <a href="#">
-                            <li>Terms and Conditions</li>
-                        </a>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        3700+ happy eaters
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        160+ top chefs
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_sf</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/index/berlin.jpg" alt="Berlin">
+                    <h3>China</h3>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        2300+ happy eaters
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        110+ top chefs
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_berlin</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/index/london.jpg" alt="London">
+                    <h3>Indonesia</h3>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1200+ happy eaters
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        50+ top chefs
+                    </div>
+
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@omnifood_london</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Testimonies from our valued readers</h2>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, 
+                        so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                        <cite><img src="resources/img/index/customer-1.jpg" alt="Alberto Duncan Photo">Alberto Duncan</cite>
+                    </blockquote>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote>
+                       Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food 
+                       delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                        <cite><img src="resources/img/index/customer-2.jpg" alt="Joana Silva Photo">Joana Silva</cite>
+                    </blockquote>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and 
+                        ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    <cite><img src="resources/img/index/customer-3.jpg" alt="Milton Chapman Photo">Milton Chapman</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Donate to our fundraising</h2>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3>King Midas</h3>
+                            <p class="plan-price">$399 <span>/ month</span></p>
+                            <p class="plan-price-meal"> Can help 3500 farmers</p>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="btn btn-full">Donate now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Good Samaritan</h3>
+                            <p class="plan-price">$149 <span>/ month</span></p>
+                            <p class="plan-price-meal"> Can help 2250 farmers</p>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a href="#" class="btn btn-ghost">Donate now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Generous Man</h3>
+                            <p class="plan-price">$19 <span>/ meal</span></p>
+                            <p class="plan-price-meal"> Can help 950 farmers</p>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
+                                <li><i class="ion-ios-close-empty icon-small"></i></li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a href="#" class="btn btn-ghost">Donate now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section contact-form">
-                    <h2>Contact us</h2>
-                    <br>
-
-                    <form action="index.html" method="post">
-                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-                        <textarea rows="3" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-
-                        <button type="submit" class="btn btn-big contact-btn">
-                            <i class="fas fa-envelope"></i>
-                            Send
-                        </button>
-                    </form>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                &copy; KanDili-Blog.com | Designed by Marc Viernes & Randa Ancheta
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 by Marc Viernes & Randa Ancheta. All rights reserved.<br>
+                    This webpage was created for the course "Design and Develop a Killer Website 
+                    Using HTML5 and CSS3" by Jonas Schmedtmann. No copyrights here.<br>
+                    This webpage is for you! So go and do whatever you want with it and have fun.
+                </p>
+
+                <p>
+                    Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> 
+                    and HTML, CSS, JAVASCRIPT.
+                </p>
             </div>
-        </div>
-        <!-- # Footer -->
-
-        <!-- JQuerry -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-        crossorigin="anonymous"></script>
-
-        <!-- Slick Carousel -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        </footer>
+    
+        <script src="vendors/js/1.11.2-jquery.min.js"></script>
+        <script src="vendors/js/respond.min.js"></script>
+        <script src="vendors/js/html5shiv.min.js"></script>
+        <script src="vendors/js/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
 
         <!-- Custom Script -->
-        <script src="js/scripts.js"></script>
-    </body>
+        <script src="resources/js/index-script.js"></script>
+    </body>  
 </html>
+
+<!--
+<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+-->
