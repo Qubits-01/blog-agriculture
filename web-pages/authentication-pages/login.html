@@ -14,8 +14,28 @@
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../../resources/css/main-menu-style.css">
 
+        <!-- Custom Media Queries -->
+        <link rel="stylesheet" type="text/css" href="../../resources/css/main-menu-media-queries.css">
+
         <link rel="icon" href="../../resources/img/icons/KanDili.ico">
         <title>Login</title>
+
+        <style type="text/css">
+            /*
+            body {
+                background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../resources/css/background-img/upper-background.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../resources/css/background-img/upper-background.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                background-attachment: fixed;
+            }
+
+            .header{
+                opacity: 0.7;
+            }
+            */
+        </style>
     </head>
        
     <body>
@@ -33,8 +53,8 @@
                     <a href="#">Home</a>
 
                     <ul style="left: 0px">
-                        <li><a href="#">Landing Page</a></li>
-                        <li><a href="#" class="logout">Team</a></li>
+                        <li><a href="../../index.html" class="nav-options">Welcome Page</a></li>
+                        <li><a href="../main-menu.html" class="logout nav-options">Main Menu</a></li>
                     </ul>
                 </li>
 
@@ -52,8 +72,8 @@
                     </a>
 
                     <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#" class="logout">Logout</a></li>
+                        <li><a href="#" class="nav-options">Dashboard</a></li>
+                        <li><a href="../../web-pages/authentication-pages/login.html" class="logout nav-options">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -83,11 +103,7 @@
         </div>
 
         <!-- JQuerry -->
-        <script src="../../vendors/js/3.4.1-jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-        crossorigin="anonymous"></script>
-
-        <!-- Slick Carousel -->
-        <script type="text/javascript" src="../../vendors/js/slick.min.js"></script>
+        <script src="../../vendors/js/3.4.1-jquery.min.js"></script>
 
         <!-- Custom Script -->
         <script src="../../resources/js/main-menu-script.js"></script>

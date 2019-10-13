@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    
-    
-    /* For the sticky navigation */
+    /* Sticky Navigation */
     $('.js--section-features').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
@@ -12,8 +10,7 @@ $(document).ready(function() {
       offset: '60px;'
     });
     
-    
-    /* Scroll on buttons */
+    /* Scroll on Buttons */
     $('.js--scroll-to-plans').click(function () {
        $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
     });
@@ -22,8 +19,7 @@ $(document).ready(function() {
        $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
     });
     
-    
-    /* Navigation scroll */
+    /* Navigation Scroll */
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -39,8 +35,7 @@ $(document).ready(function() {
       });
     });
     
-    
-    /* Animations on scroll */
+    /* Scroll Animations*/
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
@@ -65,8 +60,7 @@ $(document).ready(function() {
         offset: '50%'
     });
     
-    
-    /* Mobile navigation */
+    /* Mobile Navigation */
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
