@@ -1,5 +1,6 @@
 # Blog-Agriculture
 Future Ready ASEAN Front-end web development competition
+https://github.com/Qubits-Official/Blog-Agriculture.git
 
 **Features:**
     We built this website to be RESPONSIVE in different screen sizes (ex. desktops, laptops, tablets, smartphones, etc.).
