@@ -293,30 +293,30 @@ header {
 /* # FEATURES ------------------------------------------------------------ */
 
 
-/* MEALS ------------------------------------------------------------ */
-.section-meals {
+/* AGRICULTURE ------------------------------------------------------------ */
+.section-agriculture {
     padding: 0px;
 }
 
-.meals-showcase {
+.agriculture-showcase {
     list-style: none;
     width: 100%;
 }
 
-.meals-showcase li {
+.agriculture-showcase li {
     display: block;
     float: left;
     width: 25%;
 }
 
-.meal-photo {
+.agriculture-photo {
     width: 100%;
     margin: 0px;
     overflow: hidden;
     background-color: #000;
 }
 
-.meal-photo img {
+.agriculture-photo img {
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -327,13 +327,13 @@ header {
     transition: transform 0.5s, opacity 0.5s;
 }
 
-.meal-photo img:hover {
+.agriculture-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
-/* # MEALS ------------------------------------------------------------ */
+/* # AGRICULTURE ------------------------------------------------------------ */
 
 /* HOW IT WORKS ------------------------------------------------------------ */
 .section-steps {
@@ -357,7 +357,7 @@ header {
 }
 
 .app-screen {
-    width: 40%;
+    width: 100%;
 }
 
 .works-step {
@@ -488,7 +488,7 @@ cite img {
     font-weight: 300;
 }
 
-.plan-price-meal {
+.plan-price-fundraising {
     font-size: 80%;
 }
 
